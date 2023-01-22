@@ -1,0 +1,197 @@
+.team-container{
+    margin-left: 19px;
+    margin-top: 70px;
+    margin-right: 19px;
+}
+.team-container .essentials .team1{
+    color: #008DA6;
+    font-weight: 800;
+}
+.team-container .essentials .team2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.team-Img{
+    
+    background-color: #ffebe5;
+    text-align: center;
+    padding-bottom: 26px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+.team-Img:hover{
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 10%);
+}
+.team-Img img{
+    width: 100%;
+}
+ .community{
+    margin-top: 15px;
+    margin-bottom: 17px;
+     font-size: 20px;
+    font-weight: 600;
+}
+.team-link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    color: #0052CC;
+}
+/* item card */
+
+.team-card {
+    display: grid;
+    border-radius: 5px;
+    gap: 3rem 2rem;
+     margin-top: 30px;
+    text-align: center;
+    padding: 4px 4px 26px 4px;
+    border-radius: 5px;
+     margin-left: 19px;
+    margin-right: 19px;
+    
+}
+.TeamGrid:hover{
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 10%);
+}
+.TeamGrid{
+    padding-bottom: 40px;
+    line-height: 30px;
+}
+img{
+    width: 100%;
+}
+/* event section */
+.event-container {
+    margin-top: -10px;
+     margin-left: 19px;
+    margin-right: 19px;
+
+}
+.event-container .event{
+    color: #008DA6;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+.event-container .event2{
+     font-size: 25px;
+    font-weight: 600;
+}
+.event-container img{
+    width: 100%;
+    margin: 20px 0;
+}
+.event-container a{
+    color: #0052CC;
+   
+}
+/* career section */
+.career{
+    text-align: center;
+    margin-top: 150px;
+}
+.career .career1{
+        color: #008DA6;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+.career .career2{
+     font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+.career .career3{
+    color: #42526E;
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.career button{
+    margin-top: 26px;
+    border: none;
+    background-color: #0052CC;
+    color: white;   
+    padding: 10px 27px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.career .img-career{
+    position: relative;
+    margin-top: -100px;
+    z-index: -1;
+}
+.career img{
+    width: 100%;
+}
+.team-Img .team-desktop{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        max-width: 1340px;
+        margin: 100px auto;
+        padding-left: 19px;
+        justify-content: space-between;
+
+    }
+    .team-container .essentials{
+        max-width: 600px;
+    }
+    .team-container .essentials .team2{
+        font-size: 38px;
+    }
+    .team-Img .team-mobile{
+        display: none;
+    }
+    .team-Img .team-desktop{
+        display: flex;
+        width: 100%;
+    }
+/* teamcard */
+    .team-card{
+        grid-template-columns: repeat(3 , 1fr);
+         max-width: 1340px;
+         margin: -70px auto;
+         padding-left: 19px;
+    } 
+    /* event container */
+    .event-container{
+          max-width: 1340px;
+        justify-content: space-between; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 19px;
+         margin: 50px auto;
+         align-items: center;
+         column-gap: 30px;
+    }
+   .event-container .event2{
+     font-size: 36px;
+    }
+    .career{
+   
+    background-image: url(../images/background-career1.webp) , url(../images/background-career2.webp);
+    background-position: bottom left 200px , bottom right 200px;
+    background-repeat: no-repeat , no-repeat;
+    background-size: contain , contain;
+  padding-bottom: 50px;
+}
+.career .career2{
+    font-size: 50px;
+}
+.career img{
+    display: none;
+}
+   
+}

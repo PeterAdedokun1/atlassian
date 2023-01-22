@@ -1,0 +1,211 @@
+.Tab-section{
+    margin-top: 100px;
+    margin-left: 19px;
+}
+.Tab-section .tab-heading p{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    color: #253825;
+}
+.tab-bigImg img{
+    width: 100%;
+}
+.tab-info{
+    margin-top: 25px;
+}
+.tab-info .heading{
+    font-size: 20px;
+    font-weight: 500;
+    color: #253825;
+    margin-bottom: 10px;
+}
+.tab-container-link{
+    color: #0052CC;
+    display: flex;
+    margin-bottom: 39px;
+    align-items: center;
+}
+.tab-info a{
+    color: #0052CC;
+}
+.tab-info a:hover{
+    text-decoration: underline;
+    color: #1600a2;
+}
+.tab-container-link span{
+    margin-top: 5px;
+    margin-left: 8px;
+    transition:  all 0.1s;
+}
+.tab-container-link:hover span {
+    transform: translateX(4px);
+}
+.small-container{
+    display: flex;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.small-container .small-img{
+    align-items: center;
+    background-color: #dfe1e5;
+    border-radius: 3px;
+    display: flex;
+    height: 72px;
+    justify-content: center;
+    margin-right: 24px;
+    min-width: 72px;
+}.small-container .small-img:hover{
+   background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.small-container .small-img img {
+    width: 40px;
+}
+.small-container .small-text{
+    margin-top: 13px;
+}
+.small-container .text-heading{
+    font-weight: bold;
+    font-size: 16px;
+}
+.small-container .text-small{
+    color: black;
+    font-weight: 400;
+}
+.small-container .clear{
+    display: none;
+    height: 0;
+}
+
+
+/* video */
+.vid-section {
+    text-align: center;
+    margin-top: 80px;
+}
+.vid-section .team{
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.vid-section .customer{
+    color: #0052CC;
+}
+
+
+.logo-container{
+     background-image: linear-gradient(180deg, rgba(251, 251, 251, 0) 0.05%, #DEEBFF 99.95%) ;  background-repeat: no-repeat; 
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     padding-bottom: 90px;
+}
+.logo-container img{
+    /* line-height: 8.0; */
+    margin-top: 90px;
+   max-width: 110px;
+
+
+
+}
+.logo-container .nasa{
+    /* width: 100%; */
+    width: 130px;
+     line-height: 8.0;
+}
+/* btn contain */
+
+.btn-contain{
+    display: none;
+}
+/* tab select mobile */
+
+.mobile-container{
+    margin-top: 30px;
+    position: relative;
+}
+
+.select-container{
+    display: flex;
+    background-color: #0065FF;
+    max-width: 400px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-drop{
+    background-color:  #DEEBFF;
+    max-width: 400px;
+    padding: 10px 30px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.select-drop p{
+    margin-bottom: 20px;
+    color: #0065FF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.select-drop p:hover{
+    text-decoration: none;
+}
+
+@media  screen and (min-width: 800px) {
+    .Tab-section{
+            max-width: 1340px;
+            margin: 100px auto;
+            padding-left: 19px;
+
+    }
+   
+   .tab-container{
+    display: flex;
+    flex-direction: row-reverse;
+
+   }
+   .Tab-section .tab-heading p{
+    font-size: 37px;
+   }
+   .vid-section .team{
+    font-size: 20px;
+   }
+   .vid-section .customer{
+    font-size: 17px;
+    font-weight: 600;
+   }
+   /* tab button */
+   .btn-contain{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        justify-content: center;
+   }
+   .tab-btn{
+    border: none;
+    padding: 30px 60px;
+    font-weight: 1.25rem;
+    margin-right: 29px;
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    color: #0052CC;
+    font-size: 20px;
+    font-weight: 900;
+        cursor: pointer;
+
+   }
+   .active-btn{
+    background-color: #0065FF;
+    color: #ffffff;
+
+   }
+   .mobile-container{
+    display: none;
+   }
+}
