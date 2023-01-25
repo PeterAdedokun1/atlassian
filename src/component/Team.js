@@ -8,8 +8,6 @@ import Careerteam from "../images/CareersMobile.webp"
 import { teamCard } from "../data"
 import Fade from 'react-reveal/Fade';
 
-// background-career1
-// background-career2
 const Team = () => {
   return (
       <>
@@ -34,46 +32,56 @@ const Team = () => {
 
           {/* team card */}   
                
-          
-          <div className="team-card">    
+          <div className="team-card">  
+            <Fade bottom>
+              
                   {teamCard.map((item) => {
                       const { id, img, heading, info, link,background } = item;
-                      return   <div key={id} className="TeamGrid" style={{background: `${background}`}}>
+                      return <div key={id} className="TeamGrid" style={{ paddingLeft: "20px", paddingRight: "20px", background: `${background}` }}>
+                          
                           <div className='TeamContainer'>
                              <img src={img} alt=""  />
                               <p className='community'>{ heading}</p>
                               <p className='connect'>{info }</p>
                               <a href="">{link}</a>
-                              </div>
+                         </div>
                       </div>
 
                   })}
-              </div> 
-
+                  </Fade>
+              
+          </div> 
+          
               {/* event section */}
               <div className="event-container">
                   <div className="event-info">
                       <p className='event'>EVENT</p>
                       <p className='event2'>Hear from today’s fearless builders and innovators</p>
                       <a href="">Learn more</a>
-                  </div>
+              </div>
+              <Fade bottom>
                   <div className='eventImg1'>
                       <img src={unleash} alt="" />
                   </div>
+                  </Fade>
+                    <Fade bottom>
                   <div className='eventImg2'>
                       <img src={team} alt="" />
                   </div>
+                  </Fade>
           </div>
           
           {/*  Career  */}
-          <div className="career">
+          <div className="career" >
+              <div className='atlassian-career'>
               <p className='career1'>CAREERS</p>
               <p className='career2'>We can’t do it alone</p>
               <p className='career3'>We have an ambitious road ahead, and we’re looking for people to join our global team to help shape the future of Atlassian.</p>
               <button>Join the team</button>
               <div className='img-career'>
                   <img src={Careerteam} alt="" />
-                </div>
+                  </div>
+                  </div>
           </div>         
       </>
   )

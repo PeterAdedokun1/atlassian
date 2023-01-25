@@ -1,15 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: sans-serif;
-  font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
-  
+body {
+  /* font-family: sans-serif; */
+  /* font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: "Source Sans Pro", sans-serif;
+  /* font-weight: 600; */
 }
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+span {
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  /* color: red; */
 
-  a{
-    text-decoration: none;
-     font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; */
 }

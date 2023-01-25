@@ -5,7 +5,8 @@
 }
 .team-container .essentials .team1{
     color: #008DA6;
-    font-weight: 800;
+    font-weight: 900;
+    letter-spacing: 3px ;
 }
 .team-container .essentials .team2{
     font-size: 25px;
@@ -18,6 +19,8 @@
     padding-bottom: 26px;
     border-radius: 5px;
     margin-top: 35px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
 }
 .team-Img:hover{
     box-shadow: 1px 1px 6px rgb(0 0 0 / 10%);
@@ -134,7 +137,7 @@ img{
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .team-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -185,10 +188,16 @@ img{
     background-position: bottom left 200px , bottom right 200px;
     background-repeat: no-repeat , no-repeat;
     background-size: contain , contain;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
+  
+  /* padding-top: 50px; */
+}
+.atlassian-career{
+    /* margin-top: -40px; */
 }
 .career .career2{
     font-size: 50px;
+
 }
 .career img{
     display: none;

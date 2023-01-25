@@ -1,118 +1,115 @@
-footer{
-    background-color: #f4f5f7;
-    padding-top: 30px;
+footer {
+  background-color: #f4f5f7;
+  padding-top: 30px;
+}
+.footer {
+  margin-left: 19px;
+}
+.footer-logo {
+  margin-bottom: 30px;
+  margin-top: 14px;
+  grid-column: 1/3;
+}
+.footer-logo img {
+  width: 130px;
+}
+li {
+  list-style: none;
+}
+.link-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-.footer{
-    margin-left: 19px;
+.footer-container p {
+  color: #42562e;
+  font-weight: 800;
+  font-size: 14px;
 }
-.footer-logo{
-    margin-bottom: 30px;
-    margin-top: 14px;
-    grid-column: 1/3;
+.footer-container a {
+  color: #42562e;
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.footer-logo img{
-    width: 130px;
+.footer-container a:hover {
+  text-decoration: underline;
 }
-li{
-    list-style: none;
-} 
-.link-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.link-bottom {
+  margin-bottom: 30px;
 }
-.footer-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.footer-container p{
-    color: #42562E;
-    font-weight: 800;
-    font-size: 14px;
-}
-.footer-container a{
-    color: #42562E;
-    font-size: 15px;
-     font-family: Charlie Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
-}
-.footer-container a:hover{
-    text-decoration: underline;
-}
-.link-bottom{
-    margin-bottom: 30px;
-}
-.link-bottom a{
-    color: #0052CC;
-
+.link-bottom a {
+  color: #0052cc;
 }
 /* sub footer links */
-.sub-footer{
-    background-color: #f4f5f7;
-    border-top: 1px solid #901E42;
+.sub-footer {
+  background-color: #f4f5f7;
+  border-top: 1px solid #901e42;
+  display: grid;
+  padding-left: 19px;
+  margin-top: -15px;
+  width: 100%;
+}
+.sub-footer-link {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.sub-footer-link span {
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0px;
+  line-height: normal;
+}
+.sub-footer-link span:hover {
+  text-decoration: underline;
+}
+.social-links {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: repeat(4, 40px);
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.social-links img {
+  width: 25px;
+}
+@media screen and (min-width: 1000px) {
+  footer {
+    margin-top: 110px;
+  }
+  .footer-container {
     display: grid;
-    padding-left: 19px;
-    margin-top: -15px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer {
+    max-width: 1340px;
+    margin: 100px auto;
     width: 100%;
-
-}
-.sub-footer-link{
-    display: grid;
-    grid-template-rows: 1fr;
-}
-.sub-footer-link span{
-    margin-top: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 0px;
-    line-height: normal;
-}
-.sub-footer-link span:hover{
-    text-decoration: underline;
-}
-.social-links{
-    display: grid;
-    justify-content: end;
-    grid-template-columns: repeat(4, 40px);
-    gap: 4px;
-    margin-bottom: 20px;
-}
-.social-links img{
-    width: 25px;
-}
-@media screen and (min-width: 800px) {
-    footer{
-        margin-top: 110px;
-
-    }
-    .footer-container{
-       display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .footer{
-           max-width: 1340px;
-            margin: 100px auto;
-            width: 100%;
-            padding-left: 19px;
-            margin-top: 10px;
-    }
-    .footer-logo{
-        grid-area: 1;
-    }
-    .sub-footer{
-        padding-left: 90px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: -120px;
-    }
-    .sub-footer-link{
-        display: flex;
-        margin-right: 20px;
-    }
-   .social-links{
+    padding-left: 19px;
     margin-top: 10px;
-   }
-    .sub-footer-link span{
-        margin-right: 20px;
-    }
+  }
+  .footer-logo {
+    grid-area: 1;
+  }
+  .sub-footer {
+    padding-left: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -120px;
+  }
+  .sub-footer-link {
+    display: flex;
+    margin-right: 20px;
+  }
+  .social-links {
+    margin-top: 10px;
+  }
+  .sub-footer-link span {
+    margin-right: 20px;
+  }
 }

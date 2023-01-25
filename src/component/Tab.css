@@ -5,7 +5,7 @@
 .Tab-section .tab-heading p{
     font-size: 25px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     color: #253825;
 }
 .tab-bigImg img{
@@ -15,8 +15,8 @@
     margin-top: 25px;
 }
 .tab-info .heading{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     color: #253825;
     margin-bottom: 10px;
 }
@@ -85,7 +85,7 @@
     margin-top: 80px;
 }
 .vid-section .team{
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 .vid-section .customer{
